@@ -56,7 +56,7 @@ export default function HomePage() {
                             <li>Bảo hiểm kết quả giá trị cao.</li>
                             <li>Tổng đài hỗ trợ 24/7.</li>
                         </ul>
-                        <button className="more-btn" onClick={() => navigate('/send-sampling')}>XEM THÊM</button>
+                        <button className="more-btn" onClick={() => navigate('/send-sampling')}>ĐĂNG KÍ</button>
                     </div>
 
                     <div className="pricing-card">
@@ -75,7 +75,7 @@ export default function HomePage() {
                             <li>Bảo hiểm kết quả giá trị cao.</li>
                             <li>Tổng đài hỗ trợ 24/7.</li>
                         </ul>
-                        <button className="more-btn" onClick={() => navigate('/medical-facility')}>XEM THÊM</button>
+                        <button className="more-btn" onClick={() => navigate('/medical-facility')}>ĐĂNG KÍ</button>
                     </div>
 
                     <div className="pricing-card">
@@ -92,9 +92,9 @@ export default function HomePage() {
                             <li>Thanh toán tiện lợi.</li>
                             <li>Bảo hiểm kết quả giá trị cao.</li>
                             <li>Tổng đài hỗ trợ 24/7.</li>
-                            <li></li>
+                            <li>Được hỗ trợ thu mẫu tại nhà.</li>
                         </ul>
-                        <button className="more-btn" onClick={() => navigate('/home-sampling')}>XEM THÊM</button>
+                        <button className="more-btn" onClick={() => navigate('/home-sampling')}>ĐĂNG KÍ</button>
                     </div>
                 </div>
             </section>

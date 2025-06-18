@@ -8,8 +8,8 @@ const Footer = () => {
                 <div className="footer-container">
                     {/* logo and descrip */}
                     <div className="footer-section">
-                        <h2 className="logo">DNA Clinic</h2>
-                        <p>Viện Nghiên Cứu Khoa Học Và Ứng Dụng Công Nghệ DNA Clinic</p>
+                        <h2 className="logo">GENLAB_VIETNAM</h2>
+                        <p>Viện Nghiên Cứu Khoa Học Và Ứng Dụng Công Nghệ GenLab Vietnam</p>
                     </div>
 
                     {/* service */}
@@ -34,7 +34,7 @@ const Footer = () => {
                             <i className="fas fa-phone"></i> 0339 773 330 - 0338 773 330
                         </p>
                         <p>
-                            <i className="fas fa-envelope"></i> vietcarelab@gmail.com
+                            <i className="fas fa-envelope"></i> Genlabvietnam@gmail.com
                         </p>
                         <p>
                             <i className="fas fa-clock"></i> Hỗ trợ tư vấn 24/7

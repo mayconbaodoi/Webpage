@@ -16,29 +16,32 @@ import UserManagement from './pages/UserManag';
 import ManagerPanel from './pages/ManagerPanel';
 import Staff from './pages/Staff';
 /*end */
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 
 function App() {
     return (
-        <Router>
-            <Header />
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/signup" element={<SignUp />} />
-                <Route path="/signin" element={<SignIn />} />
-                <Route path="/medical-facility" element={<MedicalFacility />} />
-                <Route path="/home-sampling" element={<HomeSampling />} />
-                <Route path="/send-sampling" element={<SendSampling />} />
-                <Route path="/about" element={<About /> } />
-                <Route path="/guide" element={<GuidePage />} />
-                <Route path="/price" element={<PricePage />} />
-                {/* phan duoi la de test page */}
-                <Route path="/user-management" element={<UserManagement />} />
-                <Route path="/manager-panel" element={<ManagerPanel />} />
-                <Route path="/staff" element={<Staff /> } />
-            </Routes>
-            <Footer />
-        </Router>
+        <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+            <Router>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/signup" element={<SignUp />} />
+                    <Route path="/signin" element={<SignIn />} />
+                    <Route path="/medical-facility" element={<MedicalFacility />} />
+                    <Route path="/home-sampling" element={<HomeSampling />} />
+                    <Route path="/send-sampling" element={<SendSampling />} />
+                    <Route path="/about" element={<About /> } />
+                    <Route path="/guide" element={<GuidePage />} />
+                    <Route path="/price" element={<PricePage />} />
+                    {/* phan duoi la de test page */}
+                    <Route path="/user-management" element={<UserManagement />} />
+                    <Route path="/manager-panel" element={<ManagerPanel />} />
+                    <Route path="/staff" element={<Staff /> } />
+                </Routes>
+                <Footer />
+            </Router>
+        </GoogleOAuthProvider>
     );
 }
 
