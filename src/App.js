@@ -18,6 +18,10 @@ import SampleHairPage from './pages/SampleHairPage';
 import SampleNailPage from './pages/SampleNailPage';
 import SampleNavelPage from './pages/SampleNavelpage';
 import SampleSpecialPage from './pages/SampleSpecialPage';
+import Services from './pages/Services';
+import CivilDNATest from './pages/CivilDNATest';
+import AdministrativeDNATest from './pages/AdminstrativeDNATest';
+import HomeDNATest from './pages/HomeDNATest';
 /*Phan duoi la de test page*/ 
 import UserManagement from './pages/UserManag';
 import ManagerPanel from './pages/ManagerPanel';
@@ -50,6 +54,10 @@ function App() {
                     <Route path="/mong" element={<SampleNailPage />} />
                     <Route path="/ron" element={<SampleNavelPage />} />
                     <Route path="/dac-biet" element={<SampleSpecialPage />} />
+                    <Route path="/dich-vu" element={<Services />} />
+                    <Route path="/dan-su" element={<CivilDNATest />} />
+                    <Route path="/hanh-chinh" element={<AdministrativeDNATest />} />
+                    <Route path="/nha" element={<HomeDNATest />} />
                     {/* phan duoi la de test page */}
                     <Route path="/user-management" element={<UserManagement />} />
                     <Route path="/manager-panel" element={<ManagerPanel />} />

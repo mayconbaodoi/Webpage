@@ -23,16 +23,7 @@ const Header = () => {
                 <div className="nav-links">
                     <Link to="/" className="nav-link">TRANG CHỦ</Link>
                     <Link to="/about" className="nav-link">GIỚI THIỆU</Link>
-                    <div className="nav-link nav-dropdown">
-                        DỊCH VỤ <span className="dropdown-arrow">▼</span>
-                        <div className="dropdown-menu">
-                            <Link to="/dich-vu/cha-con" className="dropdown-item">Xét nghiệm ADN cha con</Link>
-                            <Link to="/dich-vu/giay-khai-sinh" className="dropdown-item">Xét nghiệm ADN làm giấy khai sinh</Link>
-                            <Link to="/dich-vu/thai-nhi" className="dropdown-item">Xét nghiệm ADN thai nhi không xâm lấn</Link>
-                            <Link to="/dich-vu/nipt" className="dropdown-item">Xét Nghiệm NIPT</Link>
-                            <Link to="/dich-vu/the-adn" className="dropdown-item">Xét nghiệm thẻ ADN cá nhân</Link>
-                        </div>
-                    </div>
+
                     <div className="nav-link nav-dropdown" onClick={() => navigate("/huong-dan")}>
                         <span className="dropdown-label">HƯỚNG DẪN</span> <span className="dropdown-arrow">▼</span>
                         <div className="dropdown-menu" onClick={e => e.stopPropagation()}>
@@ -42,6 +33,15 @@ const Header = () => {
                             <Link to="/mong" className="dropdown-item">Mẫu móng</Link>
                             <Link to="/ron" className="dropdown-item">Mẫu rốn</Link>
                             <Link to="/dac-biet" className="dropdown-item">Mẫu đặc biệt</Link>
+                        </div>
+                    </div>
+
+                    <div className="nav-link nav-dropdown" onClick={() => navigate("/dich-vu")}>
+                        <span className="dropdown-label">DỊCH VỤ</span> <span className="dropdown-arrow">▼</span>
+                        <div className="dropdown-menu" onClick={e => e.stopPropagation()}>
+                            <Link to="/dan-su" className="dropdown-item">Xét nghiệm dân sự</Link>
+                            <Link to="/hanh-chinh" className="dropdown-item">Xét nghiệm hành chính</Link>
+                            <Link to="/nha" className="dropdown-item">Xét nghiệm tại nhà</Link>
                         </div>
                     </div>
                     <Link to="/price" className="nav-link">BẢNG GIÁ</Link>
