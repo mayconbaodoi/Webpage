@@ -11,10 +11,19 @@ import SendSampling from './pages/SendSampling';
 import About from './pages/AboutPage';
 import GuidePage from './pages/GuidePage';
 import PricePage from './pages/PricePage';
+import SamplingInstructionsPage from './pages/SamplingInstructionsPage';
+import SampleBloodPage from './pages/SampleBloodPage';
+import SampleMucosaPage from './pages/SampleMucosaPage';
+import SampleHairPage from './pages/SampleHairPage';
+import SampleNailPage from './pages/SampleNailPage';
+import SampleNavelPage from './pages/SampleNavelpage';
+import SampleSpecialPage from './pages/SampleSpecialPage';
 /*Phan duoi la de test page*/ 
 import UserManagement from './pages/UserManag';
 import ManagerPanel from './pages/ManagerPanel';
 import Staff from './pages/Staff';
+
+
 /*end */
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
@@ -34,6 +43,13 @@ function App() {
                     <Route path="/about" element={<About /> } />
                     <Route path="/guide" element={<GuidePage />} />
                     <Route path="/price" element={<PricePage />} />
+                    <Route path="/mau" element={<SampleBloodPage />} />
+                    <Route path="/huong-dan" element={<SamplingInstructionsPage />} />
+                    <Route path="/niem-mac" element={<SampleMucosaPage />} />
+                    <Route path="/toc" element={<SampleHairPage />} />
+                    <Route path="/mong" element={<SampleNailPage />} />
+                    <Route path="/ron" element={<SampleNavelPage />} />
+                    <Route path="/dac-biet" element={<SampleSpecialPage />} />
                     {/* phan duoi la de test page */}
                     <Route path="/user-management" element={<UserManagement />} />
                     <Route path="/manager-panel" element={<ManagerPanel />} />
